@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="71px" height="7px" viewbox="0 0 71 7" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M3.5 7C5.433 7 7 5.433 7 3.5C7 1.567 5.433 0 3.5 0C1.567 0 0 1.567 0 3.5C0 5.433 1.567 7 3.5 7Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="Group-7">
+    <path d="M0 0L56 0L56 1L0 1L0 0Z" transform="translate(15 3)" id="Rectangle" fill="#9E7F66" fill-rule="evenodd" stroke="none" />
+    <g id="Oval">
+      <g clip-path="url(#clip_1)">
+        <use xlink:href="#path_1" fill="none" stroke="#9E7F66" stroke-width="2" />
+      </g>
+    </g>
+  </g>
+</svg>

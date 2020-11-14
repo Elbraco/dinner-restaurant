@@ -1,0 +1,317 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+td:not([align]), th:not([align]) {
+  text-align: left;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+P {
+  letter-spacing: -0.22px;
+  line-height: 3rem;
+}
+
+p, a {
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: white;
+  padding-bottom: 2.4rem;
+  font-weight: 300;
+  letter-spacing: -0.8px;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  letter-spacing: -0.5px;
+  padding-bottom: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  display: block;
+  position: relative;
+  color: lightgrey;
+}
+.btn:hover {
+  color: #4c4c4c;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active {
+  color: #4c4c4c;
+  /* background: url('tiret-h3.png') no-repeat; */
+}
+
+.active::before {
+  content: url("../img/main-page/tiret-h3.png");
+  position: absolute;
+  left: -23.8rem;
+}
+
+.none {
+  display: none;
+}
+
+.bg-black {
+  background-color: #111111;
+  margin-top: -7rem;
+}
+
+.bg-family {
+  background: url("../img/main-page/Rectangle.svg") no-repeat;
+  background-position-x: -45rem;
+  position: relative;
+}
+.bg-family::before {
+  content: url("../img/main-page/barre.png");
+  position: absolute;
+  top: 11rem;
+  left: 3rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.max-container {
+  max-width: 1235px;
+  margin: 0 auto;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+  padding: 2rem 5rem;
+  transition: all 0.5s;
+  font-size: 500;
+  background: #111111;
+}
+.button:hover {
+  background: white;
+  color: #111111;
+}
+
+.background {
+  background: url("../img/main-page/bg-header.png") no-repeat;
+  background-position: top right;
+  padding-bottom: 18.9rem;
+}
+
+.little-article {
+  width: 35.1%;
+  position: relative;
+}
+.little-article::before {
+  content: url("../img/main-page/branch-h2.svg");
+  position: absolute;
+  top: -10rem;
+}
+
+header {
+  background-color: #111111;
+}
+header figure {
+  padding-top: 6.5rem;
+  padding-bottom: 15.3rem;
+}
+header .title-header {
+  width: 52%;
+  padding-bottom: 8.2rem;
+}
+header .title-header p {
+  width: 70%;
+  color: white;
+}
+
+.enjoy {
+  justify-content: space-between;
+  align-items: center;
+  background: url("../img/main-page/Rectangle.svg") no-repeat;
+  background-position: -14% 77%;
+  margin-bottom: 12rem;
+}
+.enjoy figure {
+  margin-top: -10rem;
+}
+.enjoy figure img {
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
+}
+
+.most {
+  justify-content: space-between;
+  align-items: center;
+  background: url("../img/main-page/Rectangle1.svg") no-repeat;
+  background-position: right bottom;
+}
+.most::before {
+  content: url("../img/main-page/barre.png");
+  position: absolute;
+  right: 0;
+}
+.most figure {
+  margin-top: 0rem;
+}
+.most figure img {
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
+}
+
+.highlights {
+  padding-top: 20rem;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.highlights .threearticle {
+  width: 50%;
+}
+.highlights .threearticle .seared {
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+  padding-bottom: 2.4rem;
+}
+.highlights .threearticle .seared div {
+  width: 68%;
+}
+.highlights .threearticle .seared figure {
+  background: url("../img/main-page/one-barre.png") no-repeat;
+  background-position: 100% 12%;
+  width: 26%;
+}
+
+.border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.family {
+  justify-content: space-between;
+  padding: 16rem 0;
+}
+.family figure img {
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
+}
+.family article {
+  width: 37%;
+}
+.family article div {
+  margin-bottom: 10rem;
+}
+.family article div p {
+  margin-bottom: 5.2rem;
+}
+
+.bg-reservation {
+  background: url("../img/main-page/reservation.png") no-repeat;
+  background-color: #111111;
+}
+
+.reservation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.reservation h2 {
+  padding: 9.2rem 0;
+}
+.reservation a {
+  background: transparent;
+}
+
+.bg-footer {
+  background: #111111;
+}
+
+footer {
+  color: white;
+  padding: 7.8rem 0;
+}
+footer figure, footer div:nth-child(2) {
+  width: 30%;
+}
+footer address {
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
