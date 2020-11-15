@@ -462,6 +462,8 @@ footer {
 
    .background {
        background: url('../img/mobile/bgheader.png') no-repeat;
+       background-position: top center;
+
    }
 
    header .title-header {
@@ -471,7 +473,9 @@ footer {
        padding-top: 9.5rem;
    }
 
-
+.enjoy {
+    background: none;
+}
 .enjoy picture {
     margin-bottom: 7rem;
 }
@@ -542,13 +546,16 @@ footer {
 
         .active::before {
             bottom: -1rem;
-            left: 33%;
+            left: 40%;
         }
     }
 }
 
 .reservation h2 {
     text-align: center;
+}
+footer {
+    flex-direction: column;
 }
 footer figure {
     margin-bottom: 4rem;
