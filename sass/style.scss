@@ -462,6 +462,8 @@ footer {
 
    .background {
        background: url('../img/mobile/bgheader.png') no-repeat;
+       background-position: top center;
+
    }
 
    header .title-header {
@@ -542,7 +544,7 @@ footer {
 
         .active::before {
             bottom: -1rem;
-            left: 33%;
+            left: 40%;
         }
     }
 }
