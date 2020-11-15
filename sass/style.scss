@@ -7,6 +7,7 @@ html {
     box-sizing: inherit;
   }
   body {
+      max-width: 1400px;
     font-family: 'Spartan', sans-serif;
 
   }
@@ -80,23 +81,12 @@ html {
       display: none;
   }
 
-
- 
-//  .h3-family::before {
-//      content: url('../img/main-page/tiret-h3.png');
-//      position: absolute;
-//      left: -23.9rem;
-//  }
-
-
     
 .bg-black {
     background-color: rgb(17,17,17,1);
     margin-top: -7rem;
-
    
 }
-
 
 
 .bg-family {
@@ -185,11 +175,11 @@ header {
     background-position: -14% 77%;
     margin-bottom: 12rem;
 
-    figure {
+    picture {
         margin-top: -10rem;
     }
 
-    figure img {
+    picture img {
         box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
     }
     
@@ -197,6 +187,7 @@ header {
 }
 
 .most {
+    position: relative;
     justify-content: space-between;
     align-items: center;
     background: url('../img/main-page/Rectangle1.svg') no-repeat;
@@ -209,34 +200,22 @@ header {
 
     }
 
-    figure {
+    picture {
         margin-top: 0rem;
         
     }
 
-    figure img {
+    picture img {
         box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
     }
    
-
-    // div::before {
-    //     content: url('../img/main-page/branch-h2.svg');
-    // }
-
-   
-
 }
+
 .highlights {
     padding-top: 20rem;
     color: white;
     justify-content: space-between;
     align-items: flex-start;
-
-    // &::before {
-    //     content:  url(../img/main-page/branch-h2.svg);
-    //     position: absolute;
-    //     top: 13rem;
-    // }
 
         .threearticle {
             width: 50%;
@@ -251,7 +230,7 @@ header {
                 width: 68%;
             }
 
-                figure {
+                picture {
                     background: url('../img/main-page/one-barre.png') no-repeat;
                     background-position: 100% 12%;
                     width: 26%;
@@ -269,7 +248,7 @@ header {
     justify-content: space-between;
     padding: 16rem 0;
 
-    figure img {
+    picture img {
         box-shadow: 0px 75px 100px -50px rgba(56,66,85,0.5);
     }
     article {
@@ -309,12 +288,16 @@ header {
 footer {
     color: white;
     padding: 7.8rem 0;
+    justify-content: space-around;
 
     
 
-    figure, div:nth-child(2) {
-        width: 30%;
+    article {
+        width: 75%;
+        justify-content: space-around;
     }
+
+    
 
     address {
         font-style: normal;
@@ -328,4 +311,251 @@ footer {
   
 }
 
+@media screen and (max-width: 1024px) {
 
+   
+    .background {
+        background: url('../img/tablet/bg-header.png') no-repeat;
+        background-position: top center;
+        text-align: center;
+
+    }
+
+    header .title-header {
+        width: 71%;
+        text-align: center;
+        padding-top: 42%;
+        margin: 0 auto;
+
+        figure {
+            padding-bottom: 3.2rem;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .enjoy {
+    background: url('../img/tablet/Rectangle.png') no-repeat;
+    background-position: center left;
+
+        flex-direction: column;
+
+        picture {
+            margin-bottom: 15rem;
+
+        }
+    }
+
+    .most {
+        flex-direction: column-reverse;
+        margin-bottom: 12rem;
+        background: url('../img/tablet/Rectangle2.png') no-repeat;
+        background-position: bottom right;
+
+
+
+        &::before {
+            top: 22rem;
+        }
+
+        picture {
+            margin-bottom: 15rem;
+
+        }
+    }
+
+    .little-article {
+        width: 59%;
+        margin: 0 auto;
+
+        &::before {
+            left: 40%;
+        }
+
+        h2 {
+            width: 84%;
+            margin: 0 auto;
+        }
+    }
+   
+
+    .bg-black {
+        margin: 0;
+        text-align: center;
+    }
+
+    .highlights {
+
+        .threearticle {
+            margin: 2.6rem auto;
+            width: 88%;
+        }
+    }
+
+    .bg-family {
+        text-align: center;
+    }
+    .family {
+        flex-direction: column;
+
+        article {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column-reverse;
+            width: 85%;
+        }
+        article div:nth-child(1) {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        article #myDIV  {
+            margin-top: 5.6rem;
+            display: flex;
+            justify-content: space-between;
+
+            .active::before {
+                bottom: -1.8rem;
+                left: 21%;
+            }
+        }
+    }
+    .bg-reservation {
+        background: url('../img/tablet/reservation.png') no-repeat;
+        background-color: rgb(17,17,17,1);
+        padding-bottom: 5rem;
+    }
+    .reservation {
+        flex-direction: column;
+
+        h2 {
+            padding-bottom: 1.5rem;
+            padding-top: 5rem;
+        }
+    }
+
+    
+
+       footer article {
+            flex-direction: column;
+            justify-content: start;
+            width: 60%;
+
+            div:nth-child(1) {
+                margin-bottom: 3.2rem;
+            }
+        }
+    
+}
+
+@media screen and (max-width: 650px) {
+
+    h1, h2 {
+        font-size: 3.2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+   .background {
+       background: url('../img/mobile/bgheader.png') no-repeat;
+   }
+
+   header .title-header {
+       width: 88%;
+   }
+   header figure {
+       padding-top: 9.5rem;
+   }
+
+
+.enjoy picture {
+    margin-bottom: 7rem;
+}
+
+.little-article {
+    width: 100%;
+    text-align: center;
+    &::before {
+        top: -4rem;
+    }
+
+    p {
+        width: 92%;
+        margin: 0 auto;
+
+    }
+}
+
+.most {
+    background: none;
+
+    picture {
+        margin-bottom: 10rem;
+    }
+
+    &::before {
+        display: none;
+    }
+}
+
+.highlights {
+    padding-top: 10rem;
+
+    .threearticle div {
+        flex-direction: column;
+
+      
+    }
+
+    .threearticle .seared picture {
+        background: none;
+        width: 100%;
+    }
+
+    .threearticle .seared div {
+        width: 95%;
+        margin: 2rem auto;
+    }
+}    
+
+.bg-family::before {
+    content: none;
+}
+
+.family {
+    padding: 7rem 0;
+
+    article {
+        width: 100%;
+    }
+
+    article div:nth-child(1){
+        width: 99%;
+    }
+
+    article #myDIV{
+        flex-direction: column;
+
+        .active::before {
+            bottom: -1rem;
+            left: 33%;
+        }
+    }
+}
+
+.reservation h2 {
+    text-align: center;
+}
+footer figure {
+    margin-bottom: 4rem;
+}
+footer, footer article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+}

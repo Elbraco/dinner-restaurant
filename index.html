@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
         integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Dine Restaurant</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
                 <div class="title-header">
                     <figure>
-                        <img src="img/dine.logo.svg" alt="" srcset="">
+                        <img src="img/dine.logo.svg" alt="logo dine">
                     </figure>
                     <h1>Exquisite dining
                         since 1989</h1>
@@ -38,11 +38,14 @@
     </header>
 
     <main>
-        <section class="max-container">
+        <div class="max-container">
             <article class="enjoy flex">
-                <figure>
-                    <img src="img/main-page/enjoyable.png" alt="" srcset="">
-                </figure>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="img/mobile/enjoy.png"> 
+                    <source media="(max-width: 1024px)" srcset="img/tablet/enjoyable.png">
+                     <img src="img/main-page/enjoyable.png" alt="photo article enjoyable">
+                  </picture>
+              
                 <div class="little-article">
                     <h2>Enjoyable place
                         for all the family</h2>
@@ -62,14 +65,16 @@
                         All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
                         eating the freshest, most sustainable food. </p>
                 </div>
-                <figure>
-                    <img src="img/main-page/most.png" alt="" srcset="">
-                </figure>
+                <picture>
+                    <source media="(max-width: 650px)" srcset="img/mobile/most.png"> 
+                    <source media="(max-width: 1024px)" srcset="img/tablet/most.png">
+                    <img src="img/main-page/most.png" alt="photo article most">
+                </picture>
             </article>
 
-        </section>
+        </div>
         <div class="bg-black">
-            <section class="flex highlights max-container">
+            <div class="flex highlights max-container">
 
 
                 <article class="little-article">
@@ -83,9 +88,11 @@
 
                 <article class="threearticle">
                     <div class=" flex seared border">
-                        <figure>
-                            <img src="img/main-page/seared.png" alt="" srcset="">
-                        </figure>
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/mobile/seared.png"> 
+                                
+                                <img src="img/main-page/seared.png" alt="seared">
+                        </picture>
                         <div>
                             <h3>Seared Salmon Fillet</h3>
                             <p>
@@ -95,9 +102,11 @@
                     </div>
 
                     <div class=" flex seared border">
-                        <figure>
-                            <img src="img/main-page/rosemary.png" alt="" srcset="">
-                        </figure>
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/mobile/rosemary.png"> 
+
+                            <img src="img/main-page/rosemary.png" alt="rosemary">
+                        </picture>
                         <div>
                             <h3>Rosemary Filet Mignon</h3>
                             <p>
@@ -107,9 +116,10 @@
                     </div>
 
                     <div class=" flex seared summer">
-                        <figure>
-                            <img src="img/main-page/summer.png" alt="" srcset="">
-                        </figure>
+                        <picture>
+                            <source media="(max-width: 650px)" srcset="img/mobile/summer.png"> 
+                            <img src="img/main-page/summer.png" alt="summer">
+                        </picture>
                         <div>
                             <h3>Summer Fruit Chocolate Mousse</h3>
                             <p>
@@ -119,17 +129,28 @@
                     </div>
                 </article>
 
-            </section>
+            </div>
         </div>
 
         <div class="bg-family">
-            <section class="family max-container flex">
-                <figure>
-                    <img class="img1" src="img/main-page/family.png" alt="" srcset="">
-                    <img class="none img2" src="img/main-page/special.png" alt="">
-                    <img class="none img3" src="img/main-page/social.png" alt="">
-
-                </figure>
+            <div class="family max-container flex">
+                <picture class="img1">
+                    <source media="(max-width: 650px)" srcset="img/mobile/family.png">
+                    <source media="(max-width: 1024px)" srcset="img/tablet/family.png">
+                    <img  src="img/main-page/family.png" alt="family">
+                </picture>
+                
+                <picture class="none img2">
+                    <source media="(max-width: 650px)" srcset="img/mobile/special.png">
+                    <source media="(max-width: 1024px)" srcset="img/tablet/special.png">
+                    <img  src="img/main-page/special.png" alt="special">
+                </picture>
+                
+                <picture class="none img3">
+                    <source media="(max-width: 650px)" srcset="img/mobile/social.png">
+                    <source media="(max-width: 1024px)" srcset="img/tablet/social.png">
+                    <img  src="img/main-page/social.png" alt="social">
+                </picture>
                 <article>
                     <div>
                         <h2> Family Gathering </h2>
@@ -147,7 +168,7 @@
                     </div>
                 </article>
 
-            </section>
+            </div>
         </div>
         <div class="bg-reservation">
             <section class=" reservation max-container flex">
@@ -158,8 +179,9 @@
         <div class="bg-footer">
             <footer class="max-container flex">
                 <figure>
-                    <img src="img/dine.logo.svg" alt="" srcset="">
+                    <img src="img/dine.logo.svg" alt="logo dine">
                 </figure>
+                <article class="flex">
                 <div>
                     <address>
                         Marthwaite, Sedbergh
@@ -173,12 +195,13 @@
                     </address>
                 </div>
 
-                    <div class="hours">
-                        <p> OPEN TIMES</p>
-                          <p>  MON - FRI: 09:00 AM - 10:00 PM</p>
-                          <p>  SAT - SUN: 09:00 AM - 11:30 PM</p>
-                        
-                    </div>
+                <div class="hours">
+                    <p> OPEN TIMES</p>
+                    <p> MON - FRI: 09:00 AM - 10:00 PM</p>
+                    <p> SAT - SUN: 09:00 AM - 11:30 PM</p>
+
+                </div>
+            </article>
             </footer>
         </div>
 

@@ -57,6 +57,7 @@ html {
 }
 
 body {
+  max-width: 1400px;
   font-family: "Spartan", sans-serif;
 }
 
@@ -207,14 +208,15 @@ header .title-header p {
   background-position: -14% 77%;
   margin-bottom: 12rem;
 }
-.enjoy figure {
+.enjoy picture {
   margin-top: -10rem;
 }
-.enjoy figure img {
+.enjoy picture img {
   box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 
 .most {
+  position: relative;
   justify-content: space-between;
   align-items: center;
   background: url("../img/main-page/Rectangle1.svg") no-repeat;
@@ -225,10 +227,10 @@ header .title-header p {
   position: absolute;
   right: 0;
 }
-.most figure {
+.most picture {
   margin-top: 0rem;
 }
-.most figure img {
+.most picture img {
   box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 
@@ -249,7 +251,7 @@ header .title-header p {
 .highlights .threearticle .seared div {
   width: 68%;
 }
-.highlights .threearticle .seared figure {
+.highlights .threearticle .seared picture {
   background: url("../img/main-page/one-barre.png") no-repeat;
   background-position: 100% 12%;
   width: 26%;
@@ -263,7 +265,7 @@ header .title-header p {
   justify-content: space-between;
   padding: 16rem 0;
 }
-.family figure img {
+.family picture img {
   box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 .family article {
@@ -301,9 +303,11 @@ header .title-header p {
 footer {
   color: white;
   padding: 7.8rem 0;
+  justify-content: space-around;
 }
-footer figure, footer div:nth-child(2) {
-  width: 30%;
+footer article {
+  width: 75%;
+  justify-content: space-around;
 }
 footer address {
   font-style: normal;
@@ -312,6 +316,218 @@ footer address {
   line-height: 2.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1024px) {
+  .background {
+    background: url("../img/tablet/bg-header.png") no-repeat;
+    background-position: top center;
+    text-align: center;
+  }
+
+  header .title-header {
+    width: 71%;
+    text-align: center;
+    padding-top: 42%;
+    margin: 0 auto;
+  }
+  header .title-header figure {
+    padding-bottom: 3.2rem;
+  }
+  header .title-header p {
+    width: 100%;
+  }
+
+  .enjoy {
+    background: url("../img/tablet/Rectangle.png") no-repeat;
+    background-position: center left;
+    flex-direction: column;
+  }
+  .enjoy picture {
+    margin-bottom: 15rem;
+  }
+
+  .most {
+    flex-direction: column-reverse;
+    margin-bottom: 12rem;
+    background: url("../img/tablet/Rectangle2.png") no-repeat;
+    background-position: bottom right;
+  }
+  .most::before {
+    top: 22rem;
+  }
+  .most picture {
+    margin-bottom: 15rem;
+  }
+
+  .little-article {
+    width: 59%;
+    margin: 0 auto;
+  }
+  .little-article::before {
+    left: 40%;
+  }
+  .little-article h2 {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .bg-black {
+    margin: 0;
+    text-align: center;
+  }
+
+  .highlights .threearticle {
+    margin: 2.6rem auto;
+    width: 88%;
+  }
+
+  .bg-family {
+    text-align: center;
+  }
+
+  .family {
+    flex-direction: column;
+  }
+  .family article {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 85%;
+  }
+  .family article div:nth-child(1) {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .family article #myDIV {
+    margin-top: 5.6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .family article #myDIV .active::before {
+    bottom: -1.8rem;
+    left: 21%;
+  }
+
+  .bg-reservation {
+    background: url("../img/tablet/reservation.png") no-repeat;
+    background-color: #111111;
+    padding-bottom: 5rem;
+  }
+
+  .reservation {
+    flex-direction: column;
+  }
+  .reservation h2 {
+    padding-bottom: 1.5rem;
+    padding-top: 5rem;
+  }
+
+  footer article {
+    flex-direction: column;
+    justify-content: start;
+    width: 60%;
+  }
+  footer article div:nth-child(1) {
+    margin-bottom: 3.2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  h1, h2 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  .background {
+    background: url("../img/mobile/bgheader.png") no-repeat;
+  }
+
+  header .title-header {
+    width: 88%;
+  }
+
+  header figure {
+    padding-top: 9.5rem;
+  }
+
+  .enjoy picture {
+    margin-bottom: 7rem;
+  }
+
+  .little-article {
+    width: 100%;
+    text-align: center;
+  }
+  .little-article::before {
+    top: -4rem;
+  }
+  .little-article p {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .most {
+    background: none;
+  }
+  .most picture {
+    margin-bottom: 10rem;
+  }
+  .most::before {
+    display: none;
+  }
+
+  .highlights {
+    padding-top: 10rem;
+  }
+  .highlights .threearticle div {
+    flex-direction: column;
+  }
+  .highlights .threearticle .seared picture {
+    background: none;
+    width: 100%;
+  }
+  .highlights .threearticle .seared div {
+    width: 95%;
+    margin: 2rem auto;
+  }
+
+  .bg-family::before {
+    content: none;
+  }
+
+  .family {
+    padding: 7rem 0;
+  }
+  .family article {
+    width: 100%;
+  }
+  .family article div:nth-child(1) {
+    width: 99%;
+  }
+  .family article #myDIV {
+    flex-direction: column;
+  }
+  .family article #myDIV .active::before {
+    bottom: -1rem;
+    left: 33%;
+  }
+
+  .reservation h2 {
+    text-align: center;
+  }
+
+  footer figure {
+    margin-bottom: 4rem;
+  }
+
+  footer, footer article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
