@@ -552,6 +552,9 @@ footer {
 .reservation h2 {
     text-align: center;
 }
+footer {
+    flex-direction: column;
+}
 footer figure {
     margin-bottom: 4rem;
 }

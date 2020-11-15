@@ -520,6 +520,10 @@ footer address {
     text-align: center;
   }
 
+  footer {
+    flex-direction: column;
+  }
+
   footer figure {
     margin-bottom: 4rem;
   }
