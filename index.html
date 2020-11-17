@@ -15,39 +15,33 @@
 <body>
     <header>
         <div class="background">
-
-            <div class="max-container">
-
-                <div class="title-header">
-                    <figure>
+            <div class="background__container">
+                    <figure class="background__title-header__logo">
                         <img src="img/dine.logo.svg" alt="logo dine">
                     </figure>
-                    <h1>Exquisite dining
+                    <h1 class="background__heading-1">Exquisite dining 
                         since 1989</h1>
-
-                    <p>
+                    <p class="background__para">
                         Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from
                         the comfort of our farmhouse.
                     </p>
-
-                </div>
-                <a href="#" class="button">BOOK A TABLE</a>
+                <a href="#" class="btn btn--background ">BOOK A TABLE</a>
             </div>
         </div>
 
     </header>
 
     <main>
-        <div class="max-container">
-            <article class="enjoy flex">
-                <picture>
+        <section class="twobox">
+            <article class="twobox__container-enjoy flexbox max-width">
+                <picture class="twobox__container-enjoy__picture">
                     <source media="(max-width: 650px)" srcset="img/mobile/enjoy.png"> 
-                    <source media="(max-width: 1024px)" srcset="img/tablet/enjoyable.png">
+                    <source media="(max-width: 1150px)" srcset="img/tablet/enjoyable.png">
                      <img src="img/main-page/enjoyable.png" alt="photo article enjoyable">
                   </picture>
               
-                <div class="little-article">
-                    <h2>Enjoyable place
+                <div class="container-article">
+                    <h2 class="heading-2">Enjoyable place
                         for all the family</h2>
 
                     <p>
@@ -56,29 +50,29 @@
                     </p>
                 </div>
             </article>
-            <article class="most flex">
+            <article class="twobox__container-most flexbox max-width">
 
-                <div class="little-article">
-                    <h2>The most locally sourced food</h2>
+                <div class="container-article">
+                    <h2 class="heading-2">The most locally sourced food</h2>
 
                     <p>
                         All our ingredients come directly from our farm or local fishery. So you can be sure that you’re
                         eating the freshest, most sustainable food. </p>
                 </div>
-                <picture>
+                <picture class="twobox__container-most__picture">
                     <source media="(max-width: 650px)" srcset="img/mobile/most.png"> 
-                    <source media="(max-width: 1024px)" srcset="img/tablet/most.png">
+                    <source media="(max-width: 1150px)" srcset="img/tablet/most.png">
                     <img src="img/main-page/most.png" alt="photo article most">
                 </picture>
             </article>
+        </section>
 
-        </div>
-        <div class="bg-black">
-            <div class="flex highlights max-container">
+        <section class="highlights ">
+            <div class="highlights__container flexbox max-width">
 
 
-                <article class="little-article">
-                    <h2>A few highlights from our menu</h2>
+                <article class="container-article">
+                    <h2 class="heading-black-2">A few highlights from our menu</h2>
 
                     <p>
                         We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
@@ -86,43 +80,44 @@
                 </article>
 
 
-                <article class="threearticle">
-                    <div class=" flex seared border">
-                        <picture>
+                <article class="highlights__seared">
+
+                    <div class="highlights__seared__items flexbox">
+                        <picture class="highlights__seared__items__picture">
                             <source media="(max-width: 650px)" srcset="img/mobile/seared.png"> 
                                 
                                 <img src="img/main-page/seared.png" alt="seared">
                         </picture>
-                        <div>
-                            <h3>Seared Salmon Fillet</h3>
-                            <p>
+                        <div class="highlights__seared__items__description">
+                            <h3 class="h3-title">Seared Salmon Fillet</h3>
+                            <p class="highlights-seared-para">
                                 Our locally sourced salmon served with a refreshing buckwheat summer salad.
                             </p>
                         </div>
                     </div>
 
-                    <div class=" flex seared border">
-                        <picture>
+                    <div class=" highlights__seared__items flexbox border">
+                        <picture class="highlights__seared__items__picture">
                             <source media="(max-width: 650px)" srcset="img/mobile/rosemary.png"> 
 
                             <img src="img/main-page/rosemary.png" alt="rosemary">
                         </picture>
-                        <div>
-                            <h3>Rosemary Filet Mignon</h3>
-                            <p>
+                        <div class="highlights__seared__items__description">
+                            <h3 class="h3-title">Rosemary Filet Mignon</h3>
+                            <p class="highlights-seared-para">
                                 Our prime beef served to your taste with a delicious choice of seasonal sides.
                             </p>
                         </div>
                     </div>
 
-                    <div class=" flex seared summer">
-                        <picture>
+                    <div class=" highlights__seared__items flexbox">
+                        <picture class="highlights__seared__items__picture">
                             <source media="(max-width: 650px)" srcset="img/mobile/summer.png"> 
                             <img src="img/main-page/summer.png" alt="summer">
                         </picture>
-                        <div>
-                            <h3>Summer Fruit Chocolate Mousse</h3>
-                            <p>
+                        <div class="highlights__seared__items__description">
+                            <h3 class="h3-title">Summer Fruit Chocolate Mousse</h3>
+                            <p class="highlights-seared-para">
                                 Creamy mousse combined with summer fruits and dark chocolate shavings.
                             </p>
                         </div>
@@ -130,75 +125,77 @@
                 </article>
 
             </div>
-        </div>
+        </section>
 
-        <div class="bg-family">
-            <div class="family max-container flex">
-                <picture class="img1">
+        <section class="family">
+            <div class="family__container flexbox max-width">
+
+                <picture class="family__container-img1">
                     <source media="(max-width: 650px)" srcset="img/mobile/family.png">
-                    <source media="(max-width: 1024px)" srcset="img/tablet/family.png">
+                    <source media="(max-width: 1150px)" srcset="img/tablet/family.png">
                     <img  src="img/main-page/family.png" alt="family">
                 </picture>
                 
-                <picture class="none img2">
+                <picture class="display-none family__container-img2">
                     <source media="(max-width: 650px)" srcset="img/mobile/special.png">
-                    <source media="(max-width: 1024px)" srcset="img/tablet/special.png">
+                    <source media="(max-width: 1150px)" srcset="img/tablet/special.png">
                     <img  src="img/main-page/special.png" alt="special">
                 </picture>
                 
-                <picture class="none img3">
+                <picture class="display-none family__container-img3">
                     <source media="(max-width: 650px)" srcset="img/mobile/social.png">
-                    <source media="(max-width: 1024px)" srcset="img/tablet/social.png">
+                    <source media="(max-width: 1150px)" srcset="img/tablet/social.png">
                     <img  src="img/main-page/social.png" alt="social">
                 </picture>
-                <article>
-                    <div>
-                        <h2> Family Gathering </h2>
+                <article class="family__gathering">
+
+                    <div class="container-article">
+                        <h2 class="heading-2"> Family Gathering </h2>
                         <p>
                             We love catering for entire families. So please bring everyone along for a special meal with
                             your loved ones. We’ll provide a memorable experience for all.
                         </p>
-                        <a href="#" class="button"> BOOK A TABLE</a>
+                        <a href="#" class="btn btn-black"> BOOK A TABLE</a>
                     </div>
 
-                    <div id="myDIV">
-                        <a href="#" class="btn btn1 active"> FAMILY GATHERING </a>
-                        <a href="#" class="btn btn2"> SPECIAL EVENTS </a>
-                        <a href="#" class="btn btn3"> SOCIAL EVENTS </a>
+                    <div class="buttons">
+                        <a href="#" class=" btn-family family__container-btn1 active"> FAMILY GATHERING </a>
+                        <a href="#" class=" btn-family family__container-btn2"> SPECIAL EVENTS </a>
+                        <a href="#" class=" btn-family family__container-btn3"> SOCIAL EVENTS </a>
                     </div>
                 </article>
 
             </div>
-        </div>
-        <div class="bg-reservation">
-            <section class=" reservation max-container flex">
+        </section>
+        <section class="reservation">
+            <div class=" reservation__container flexbox max-width">
                 <h2> Ready to make a reservation? </h2>
-                <a href="#" class="button"> BOOK A TABLE</a>
-            </section>
-        </div>
-        <div class="bg-footer">
-            <footer class="max-container flex">
-                <figure>
+                <a href="#" class="btn"> BOOK A TABLE</a>
+            </div>
+        </section>
+        <div class="footer">
+            <footer class="footer__container flexbox max-width">
+                <figure class="footer__container__picture">
                     <img src="img/dine.logo.svg" alt="logo dine">
                 </figure>
-                <article class="flex">
-                <div>
-                    <address>
+                <article class=" footer__address flexbox">
+                <div class="footer__address__container">
+                    <address class="para-footer">
                         Marthwaite, Sedbergh
                     </address>
 
-                    <address>
+                    <address class="para-footer">
                         Cumbria
                     </address>
-                    <address>
+                    <address class="para-footer">
                         +00 44 123 4567
                     </address>
                 </div>
 
                 <div class="hours">
-                    <p> OPEN TIMES</p>
-                    <p> MON - FRI: 09:00 AM - 10:00 PM</p>
-                    <p> SAT - SUN: 09:00 AM - 11:30 PM</p>
+                    <p class="para-footer"> OPEN TIMES</p>
+                    <p class="para-footer"> MON - FRI: 09:00 AM - 10:00 PM</p>
+                    <p class="para-footer"> SAT - SUN: 09:00 AM - 11:30 PM</p>
 
                 </div>
             </article>

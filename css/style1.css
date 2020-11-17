@@ -1,0 +1,19 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    width: 20%;
+}
+
+.months, .day{
+    width: 2%;
+    text-align: center;
+}
+.year {
+    width: 3%;
+    text-align: center;
+}
+
+.error {
+    background-color: red;
+}

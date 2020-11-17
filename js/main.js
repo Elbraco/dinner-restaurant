@@ -1,6 +1,6 @@
 // Add active class to the current button (highlight it)
-var header = document.getElementById("myDIV");
-var btns = header.getElementsByClassName("btn");
+var header = document.querySelector(".buttons");
+var btns = header.getElementsByClassName("btn-family");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(e) {
       e.preventDefault()
