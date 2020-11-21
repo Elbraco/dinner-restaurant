@@ -758,7 +758,7 @@ html {
 }
 
 .reservation {
-  background: url('../img/tablet/reservation.png');
+  background: url('../img/tablet/reservation.png') no-repeat;
   background-color: var(--color-codGray);
 
   &__container {
