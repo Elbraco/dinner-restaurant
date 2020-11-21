@@ -598,6 +598,7 @@ picture img {
     margin: 0 auto;
     text-align: center;
     padding-top: 6.2rem;
+    padding-left: 2.4rem;
   }
 
   .background-reservation__img {
@@ -608,6 +609,9 @@ picture img {
   .container-article {
     margin: 9.5rem auto 0;
     text-align: center;
+  }
+  .container-article::before {
+    left: 43%;
   }
 
   .background {
@@ -817,6 +821,18 @@ picture img {
   .footer__address {
     margin: 4rem 0 0 0;
     text-align: center;
+  }
+
+  .bg-table__container {
+    max-width: 34.2rem;
+  }
+  .bg-table__container .heading-1 {
+    margin-bottom: 1.6rem;
+  }
+
+  .bg-table__reserve {
+    display: inline-block;
+    margin-top: 2.4rem;
   }
 
   .form__pickdate__fieldname, .form__datetime__fieldname {

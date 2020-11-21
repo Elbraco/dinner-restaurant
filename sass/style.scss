@@ -640,6 +640,7 @@ html {
     margin: 0 auto;
     text-align: center;
     padding-top: 6.2rem;
+    padding-left: 2.4rem;
 
   }
 
@@ -655,6 +656,10 @@ html {
   .container-article {
      margin: 9.5rem auto 0;
     text-align: center;
+
+    &::before {
+      left: 43%;
+    }
   }
 
   .background {
@@ -909,6 +914,18 @@ html {
   // .form__pickdate, .form__datetime  {
   //   flex-wrap: nowrap;
   // }
+  .bg-table__container {
+    max-width: 34.2rem;
+    
+    .heading-1 {
+      margin-bottom: 1.6rem;
+    }
+
+  }
+  .bg-table__reserve {
+    display: inline-block;
+    margin-top: 2.4rem;
+  }
    .form__pickdate__fieldname, .form__datetime__fieldname  {
      width: 100%;
      text-align: left;
