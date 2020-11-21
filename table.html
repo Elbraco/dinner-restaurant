@@ -8,16 +8,116 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js"
         integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Dine Restaurant</title>
 </head>
 
 <body>
-    <h1>coucou</h1>
-    <main>
-       <input type="text" name="month">
+    <header>
+        <div class="bg-table">
+            <figure>
+                <img src="img/dine.logo.svg" alt="" srcset="">
+            </figure>
+            <div class="bg-table__container">
+                <h1 class="heading-1">Reservations </h1>
+                <p>
+                    We can’t wait to host you. If you have any special requirements please feel free to call on the phone number below. We’ll be happy to accommodate you.
+                </p>
+            </div>
+        </div>
+    </header>
+    <main class="main-table">
+        <div class="form">
+
+            <form action="" name="formulaire">
+
+                <div class="form__container">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <p class="message-error textname"> This field is required</p>
+            </div>
+
+            <div class="form__container">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <p class="message-error"> This field is required</p>
+            </div>
+
+                <div class="form__pickdate flexbox">
+                    <div class="form__pickdate__fieldname">
+                    <label for="date">Pick a date</label>
+                    <p class="message-error "> This field is required</p>
+                    </div>
+                    
+                    <input type="text"  id="month" maxlength="2" placeholder="MM">
+                    <input type="text"  id="date" maxlength="2" placeholder="DD">
+                    <input type="text"  id="year" maxlength="4" placeholder="YYYY">
+                </div>
+
+                <div class="form__datetime flexbox">
+                    <div class="form__datetime__fieldname" >
+                    <label for="date">Pick a time</label>
+                    <p class="message-error"> This field is required</p>
+
+                </div>
+                    <input type="text"  id="hours" maxlength="2" placeholder="09">
+                    <input type="text"  id="minutes" maxlength="2" placeholder="00">
+                
+
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select__trigger">
+                                <span id="AM">AM</span>
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="custom-options">
+                                <span class="custom-option selected" name='AM' data-value="AM">AM</span>
+                                <span class="custom-option" name='PM' data-value="PM">PM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__people">
+                <a href="#" id="minus"> <img src="img/reservation/minus.svg" alt="" srcset=""> </a>  <input name="quantity" type="text" class="quantity__input" value="1"> <span> people </span> <a href="#" id="plus"><img src="img/reservation/plus.svg" alt="" srcset=""> </a>
+                </div>
+                <button type="submit" class="submit btn btn-black"> make a reservation</button>
+            </form>
+        </div>
+        <div class="background-reservation">
+            <img class="background-reservation__img" src="img/reservation/Rectangle.png" alt="" srcset="">
+        </div>
     </main>
-<script src="js/dateValidation.js"></script>
+    <div class="footer">
+        <footer class="footer__container flexbox max-width">
+            <figure class="footer__container__picture">
+                <img src="img/dine.logo.svg" alt="logo dine">
+            </figure>
+            <article class=" footer__address flexbox">
+            <div class="footer__address__container">
+                <address class="para-footer">
+                    Marthwaite, Sedbergh
+                </address>
+
+                <address class="para-footer">
+                    Cumbria
+                </address>
+                <address class="para-footer">
+                    +00 44 123 4567
+                </address>
+            </div>
+
+            <div class="hours">
+                <p class="para-footer"> OPEN TIMES</p>
+                <p class="para-footer"> MON - FRI: 09:00 AM - 10:00 PM</p>
+                <p class="para-footer"> SAT - SUN: 09:00 AM - 11:30 PM</p>
+
+            </div>
+        </article>
+        </footer>
+    </div>
+
+<!-- <script src="js/main.js"></script> -->
+ <script src="js/dateValidation.js"></script> 
+<script src="js/openclose.js"></script>
 </body>
 
 </html>

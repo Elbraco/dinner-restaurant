@@ -1,58 +1,53 @@
-function validateForm() {
-    let date = new Date();
+// INPUT
+let name = document.querySelector("#name");
+let email = document.querySelector("#email");
+let month = document.querySelector("#month");
+let date = document.querySelector("#date");
+let year = document.querySelector("#year");
+let hours = document.querySelector("#hours");
+let minutes = document.querySelector("#minutes");
 
-    let dateFormat = date.getDate()+'-'+ (date.getMonth()+1) +'-'+date.getFullYear();
+//LABEL
+let label = document.querySelectorAll("label");
 
-    var d = document.forms["myForm"]["date"].value;
-    var m = document.forms["myForm"]["month"].value;
-    var y = document.forms["myForm"]["year"].value;
+// MESSAGE ERROR
+let messageError = document.querySelectorAll(".message-error");
 
-    let selectDate = d+'-'+m+'-'+y
 
-    if(date.getDate() > d ){
+// FUNCTION MESSAGE ERROR
+function errorMessage(input, index, test) {
+  test === undefined;
 
-        
-        console.log("Le jour doit etre égale ou plus grand pour prendre un rdv");
-       
-        return false
-    } 
-     if( (date.getMonth()+1) > m ){
-         
-        console.log("le mois doit etre égale ou plus grand pour prendre une table");
-        return false
+  if (input.value == "") {
+    messageError[index].classList.add("show");
+    input.classList.add("error");
+    input.classList.add("border-error");
 
-        
-
-    } 
-    if (date.getFullYear() > y ){
-        console.log(" l'année pas bonne");
+    if (test != undefined) {
+      test.classList.add("error-color");
     }
-    
-    if(d == null || d == ""){
-        alert("Please select date.");
-        return false;
-    }
-    if(m == null || m == ""){
-        alert("Please select date.");
-        return false;
-    }
-    if(y == null || y == ""){
-        alert("Please select date.");
-        return false;
-    }
-    if((m == 4 || m == 6 || m == 9 || m == 11) && d == 31) {
-        alert("Selected month contains only 30 days.");
-        return false;
-    }
-    if(m == 2 && d > 29 && (y%4 == 0)) {
-        alert("Selected month contains only 29 days.");
-        return false;
-    }
+  } else {
+    messageError[index].classList.remove("show");
+    input.classList.remove("error");
+    input.classList.remove("border-error");
 
-    if((m == 2) && d > 28) {
-        alert("Selected month contains only 28 days.");
-        return false;
+    if (test != undefined) {
+      test.classList.remove("error-color");
     }
-    return true;
+  }
 }
 
+document.forms["formulaire"].addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  errorMessage(name, 0);
+
+  errorMessage(email, 1);
+
+  errorMessage(month, 2, label[0]);
+  errorMessage(date, 2, label[0]);
+  errorMessage(year, 2, label[0]);
+
+  errorMessage(hours, 3, label[1]);
+  errorMessage(minutes, 3, label[1]);
+});

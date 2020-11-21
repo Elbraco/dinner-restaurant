@@ -61,7 +61,9 @@ html {
   --color-codGray: rgba(17, 17, 17, 1);
   --mirage: rgba(23, 25 ,43, 1);
   --ebonyCLay: rgba(36, 43, 55, 1);
-  --shuttleGray: rgba(92, 103, 121);
+  --shuttleGray: rgba(92, 103, 121, 1);
+  --shuttleGrayOpacity: rgba(92, 103, 121, .3);
+  --errorColor: rgb(181, 73, 73);
 }
 
 body {
@@ -74,7 +76,7 @@ body {
   margin: 0 auto;
 }
 
-p {
+p, span {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
@@ -137,6 +139,7 @@ h3 {
   border: 1px solid white;
   color: white;
   transition: all 0.5s;
+  text-transform: uppercase;
 }
 .btn:hover {
   background: white;
@@ -190,14 +193,13 @@ picture img {
   background-position: top right;
   background-size: contain;
   background-color: #1a1a1a;
-  padding-top: 6.5rem;
-  padding-left: 16.5rem;
+  padding: 6.5rem 0 0 16.5rem;
 }
 .background__container {
   max-width: 54.5rem;
   padding-bottom: 19.8rem;
 }
-.background__container .background__heading-1 {
+.background__container .heading-1 {
   padding-top: 15.3rem;
 }
 .background__container .background__para {
@@ -321,6 +323,7 @@ picture img {
 }
 
 .footer {
+  clear: both;
   background: var(--color-codGray);
   color: white;
 }
@@ -336,6 +339,271 @@ picture img {
   justify-content: space-evenly;
 }
 
+.bg-table {
+  background: url("../img/reservation/bg-reservation.png") no-repeat;
+  background-color: var(--color-codGray);
+  color: white;
+  padding: 6.5rem 16.7rem 12.6rem 16.7rem;
+}
+.bg-table__container {
+  padding-top: 15.3rem;
+  max-width: 45rem;
+}
+.bg-table__container .heading-2 {
+  margin-bottom: 2.4rem;
+}
+
+.form {
+  position: absolute;
+  top: 27rem;
+  right: 5rem;
+  max-width: 54.7rem;
+  text-align: center;
+  padding: 4.8rem;
+  background: #ffffff;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.5);
+}
+.form__container, .form__pickdate, .form__datetime {
+  margin-bottom: 3.2rem;
+}
+.form__container .message-error, .form__pickdate .message-error, .form__datetime .message-error {
+  text-align: left;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: -0.125px;
+  margin-top: 1rem;
+  color: var(--errorColor);
+  display: none;
+}
+.form__datetime {
+  align-items: baseline;
+}
+.form label {
+  margin-right: 5.3rem;
+  color: var(--shuttleGray);
+}
+.form input::placeholder, .form #AM {
+  color: var(--shuttleGray);
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+.form input:focus::placeholder {
+  opacity: 1;
+}
+.form label, .form input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+  font-family: "Spartan", sans-serif;
+}
+.form .show {
+  display: block;
+}
+.form .error-color {
+  color: var(--errorColor);
+}
+.form .border-error {
+  border-bottom: 1px solid var(--errorColor);
+}
+.form input.error::-webkit-input-placeholder {
+  color: var(--errorColor);
+}
+.form input {
+  appearance: none;
+  border: none;
+  border-bottom: var(--shuttleGrayOpacity) 1px solid;
+  padding: 0.6rem 0 1.6rem 1.6rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-family: "Spartan", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: -0.225px;
+}
+.form input:focus {
+  border-bottom: var(--shuttleGray) 1px solid;
+}
+.form #name, .form #email {
+  display: block;
+  width: 100%;
+}
+.form__pickdate input, .form__datetime input {
+  max-width: 8rem;
+  margin-right: 1.6rem;
+}
+.form__people {
+  border-bottom: var(--shuttleGray) 1px solid;
+  max-width: 44rem;
+  text-align: center;
+}
+.form__people span {
+  font-weight: 700;
+}
+.form__people a {
+  color: white;
+}
+.form__people #minus {
+  float: left;
+  margin-left: 3rem;
+}
+.form__people #plus {
+  float: right;
+  margin-right: 3rem;
+}
+.form__people input {
+  border: none;
+  width: 3.6rem;
+  text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.form .submit {
+  cursor: pointer;
+}
+
+.custom-select-wrapper {
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  border-bottom: var(--shuttleGrayOpacity) 1px solid;
+  max-width: 8rem;
+  margin-right: 1.6rem;
+  margin-bottom: 3.2rem;
+  width: 8rem;
+}
+.custom-select-wrapper:hover {
+  border-bottom: 1px var(--shuttleGray) solid;
+}
+.custom-select-wrapper:hover #AM {
+  opacity: 1;
+}
+.custom-select-wrapper .custom-select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.custom-select-wrapper .custom-select .custom-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  padding-left: 1.1rem;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3b3b3b;
+  background: #ffffff;
+  cursor: pointer;
+}
+.custom-select-wrapper .custom-options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-top: 0;
+  background: #fff;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: 0px 15px 25px rgba(56, 66, 85, 0.25);
+}
+.custom-select-wrapper .custom-options .custom-option {
+  position: relative;
+  display: block;
+  padding: 1rem 1rem 1rem 3rem;
+  font-size: 22px;
+  font-weight: 300;
+  color: #3b3b3b;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.custom-select-wrapper .custom-options .custom-option.selected {
+  position: relative;
+}
+
+.custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.selected::before {
+  content: url("../img/reservation/check.svg");
+  position: absolute;
+  left: 1rem;
+}
+
+.arrow {
+  position: relative;
+  height: 15px;
+  width: 15px;
+}
+
+.arrow::before, .arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0.15rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.arrow::before {
+  left: -5px;
+  transform: rotate(45deg);
+  background-color: var(--color-beaver);
+}
+
+.arrow::after {
+  left: 5px;
+  transform: rotate(-45deg);
+  background-color: var(--color-beaver);
+}
+
+.open .arrow::before {
+  left: -5px;
+  transform: rotate(-45deg);
+}
+
+.open .arrow::after {
+  left: 5px;
+  transform: rotate(45deg);
+}
+
+@media screen and (max-width: 1213px) {
+  .bg-table {
+    background: url("../img/reservation/bg-reservation-tablet.png") no-repeat;
+    background-color: var(--color-codGray);
+    background-size: cover;
+    padding: 6.5rem 0em 12.6rem 0rem;
+    text-align: center;
+  }
+
+  .form {
+    position: initial;
+    margin: 0 auto;
+    transform: translateY(-9rem);
+  }
+
+  .bg-table__container {
+    max-width: 55rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 6.2rem;
+  }
+
+  .background-reservation__img {
+    display: none;
+  }
+}
 @media screen and (max-width: 1150px) {
   .container-article {
     margin: 9.5rem auto 0;
@@ -354,7 +622,7 @@ picture img {
     text-align: center;
     padding-top: 31rem;
   }
-  .background .background__heading-1 {
+  .background .heading-1 {
     padding-top: 3.2rem;
   }
   .background .background__para {
@@ -458,7 +726,7 @@ picture img {
     left: 12rem;
   }
 
-  .background__heading-1 {
+  .heading-1 {
     font-size: 3.2rem;
     font-weight: 300;
     line-height: 4rem;
@@ -537,18 +805,33 @@ picture img {
     margin-top: 2.4rem;
   }
 
-  .reservation {
+  .bg-reservation {
     background: url("../img/mobile/reservation.png") no-repeat;
     background-size: cover;
     background-color: var(--color-codGray);
   }
-  .reservation__container {
+  .bg-reservation__container {
     padding: 8rem 0;
   }
 
   .footer__address {
     margin: 4rem 0 0 0;
     text-align: center;
+  }
+
+  .form__pickdate__fieldname, .form__datetime__fieldname {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .form__pickdate input, .form__datetime input, .custom-select-wrapper {
+    max-width: 7rem;
+  }
+}
+@media screen and (max-width: 372px) {
+  .form {
+    padding: 4.8rem 0;
   }
 }
 
