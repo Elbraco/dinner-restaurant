@@ -107,8 +107,8 @@ h2 {
   letter-spacing: -0.5px;
 }
 
-.h2-color {
-  color: var(--color-codGray);
+.h2-black {
+  color: var(--ebonyCLay);
 }
 
 h3 {
