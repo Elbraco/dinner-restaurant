@@ -183,7 +183,6 @@ html {
 
 .twobox {
   position: relative;
-  // padding: 0 11.6rem;
   background-image: url('../img/main-page/Rectangle.svg'), url('../img/main-page/Rectangle1.svg');
   background-repeat: no-repeat;
   background-position-y: 24.2rem, 91.1%;
@@ -223,7 +222,6 @@ html {
   background-color: var(--color-codGray);
   margin-top: -10.4rem;
   color: white;
-  // padding: 0 11.6rem;
 
 
   &__container {
@@ -257,7 +255,6 @@ html {
 .family {
   background: url('../img/main-page/Rectangle.svg') no-repeat;
   background-position: top left;
-  // padding: 0 11.6rem;
 
   &__container {
 
@@ -305,7 +302,7 @@ html {
       content: url('../img/main-page/longbarre.png');
       position: absolute;
       top: -0.5rem;
-    left: -12.7rem;
+    left: -13.2rem;
       }
 
     }
@@ -362,10 +359,8 @@ html {
     }
   }
 }
-// .main-table {
   
-//   padding-right: 9.5rem;
-// }
+
 .form {
   position: absolute;
   top: 27rem;
@@ -568,8 +563,7 @@ html {
 
     .custom-option.selected {
       position: relative;
-      // color: #ffffff;
-      // background-color:#305c91;
+     
     }
   
   }
@@ -665,7 +659,6 @@ html {
   .background {
     background: url('../img/tablet/bg-header.png') no-repeat;
     background-position: top center;
-    // background-size: contain;
     padding-left: 0;
     background-color: rgba(24, 24, 24, 1);
   
@@ -910,10 +903,7 @@ html {
     }
   }
 
-  //reservation 
-  // .form__pickdate, .form__datetime  {
-  //   flex-wrap: nowrap;
-  // }
+  
   .bg-table__container {
     max-width: 34.2rem;
     
