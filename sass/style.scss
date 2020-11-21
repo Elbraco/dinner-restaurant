@@ -69,6 +69,10 @@ html {
     letter-spacing: -0.5px;
   }
 
+  .h2-color {
+    color: var(--color-codGray);
+  }
+
   h3 {
     font-size: 1.8rem;
     font-weight: 700;
@@ -255,6 +259,10 @@ html {
 .family {
   background: url('../img/main-page/Rectangle.svg') no-repeat;
   background-position: top left;
+
+  .container-article::before {
+    content: none;
+  }
 
   &__container {
 

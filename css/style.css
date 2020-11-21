@@ -107,6 +107,10 @@ h2 {
   letter-spacing: -0.5px;
 }
 
+.h2-color {
+  color: var(--color-codGray);
+}
+
 h3 {
   font-size: 1.8rem;
   font-weight: 700;
@@ -270,6 +274,9 @@ picture img {
 .family {
   background: url("../img/main-page/Rectangle.svg") no-repeat;
   background-position: top left;
+}
+.family .container-article::before {
+  content: none;
 }
 .family__container {
   padding: 16rem 0;
